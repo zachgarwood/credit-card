@@ -19,5 +19,11 @@ class Ledger:
         account['balance'] -= amount
 
 
+def format_amount(amount):
+    """Cast amount to a string and prepend a dollar sign"""
+    return '${0}'.format(amount)
+
+
 def unformat_amount(amount):
+    """Remove the dollar sign from an amount and cast it to an integer."""
     return int(amount.replace('$', ''))
