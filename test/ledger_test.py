@@ -1,4 +1,4 @@
-from credit_card.ledger import Ledger, unformat_amount
+from credit_card.ledger import Ledger
 import unittest
 
 
@@ -45,8 +45,3 @@ class LedgerTest(unittest.TestCase):
         self.assertEqual(-1,
                          self.ledger.accounts['Test']['balance'],
                          'The account balance did not go into the negative')
-
-    def test_unformat_amount(self):
-        amount = unformat_amount('$1000')
-        self.assertIsInstance(amount, int)
-        self.assertEqual(1000, amount)

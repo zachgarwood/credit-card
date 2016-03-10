@@ -1,4 +1,4 @@
-from .ledger import Ledger, format_amount
+from .ledger import Ledger
 import fileinput
 import sys
 
@@ -20,4 +20,4 @@ def main():
     for account in sorted(ledger.accounts.items()):
         name = account[0]
         data = account[1]
-        print(name, format_amount(data['balance']))
+        print(name, money.format(data['balance']))
