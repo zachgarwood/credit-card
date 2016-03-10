@@ -20,4 +20,6 @@ def main():
     for account in sorted(ledger.accounts.items()):
         name = account[0]
         data = account[1]
-        print(name, money.format(data['balance']))
+        balance = (money.format(data['balance']) if data['is_valid']
+                   else 'error')
+        print('{name}: {balance}'.format(name=name, balance=balance))
