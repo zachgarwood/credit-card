@@ -13,5 +13,7 @@ class Ledger:
         if ((account['balance'] + amount) <= account['limit']):
             account['balance'] += amount
 
-    def credit(self, name, *args):
-        print('credit')
+    def credit(self, name, amount):
+        amount = int(amount)
+        account = self.accounts[name]
+        account['balance'] -= amount
