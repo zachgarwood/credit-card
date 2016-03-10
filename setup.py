@@ -5,6 +5,7 @@ setup(
     description='A code challenge from Cloudspotter',
     author='Zach Garwood',
     author_email='zachgarwood@gmail.com',
+    url='https://github.com/zachgarwood/credit-card',
     license='MIT',
     packages=['credit_card'],
     install_requires=['luhn==0.2.0'],
