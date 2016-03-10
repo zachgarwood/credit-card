@@ -6,5 +6,8 @@ setup(
     author="Zach Garwood",
     author_email="zachgarwood@gmail.com",
     license="MIT",
-    packages=["credit-card"],
+    packages=["credit_card"],
+    entry_points={
+        'console_scripts': ['credit-card=credit_card:main'],
+    },
 )

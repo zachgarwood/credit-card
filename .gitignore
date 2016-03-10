@@ -1,5 +1,7 @@
 *.egg-info/
+__pycache__/
 .tox/
 bin/
+dist/
 lib/
 pip-selfcheck.json
